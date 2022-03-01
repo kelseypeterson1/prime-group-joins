@@ -1,5 +1,6 @@
---SQL Queries
+--## SQL Queries
 
+--## Base
 1. Get all customers and their addresses.
 SELECT *
 FROM "customers"
@@ -45,3 +46,8 @@ FROM "products"
 JOIN "warehouse_product" ON "products"."id" = "warehouse_product"."product_id"
 WHERE "products"."description" = 'diet pepsi'
 GROUP BY "products"."description";
+
+--## Stretch
+9. How much was the total cost for each order?
+10. How much has each customer spent in total?
+11. How much has each customer spent in total? Customers who have spent $0 should still show up in the table. It should say 0, not NULL (research coalesce).
